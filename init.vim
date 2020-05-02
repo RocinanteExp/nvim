@@ -1,7 +1,19 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
 syntax on
 set enc=utf-8
 set noswapfile
 set incsearch
+
+set rtp+=$HOME/neovim/bundle/Vundle.vim
+call vundle#begin('$HOME/neovim/bundle/')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'preservim/nerdtree'
+
+call vundle#end()
 
 " use indentation of previous line
 set autoindent
@@ -20,6 +32,9 @@ set number
 set showmatch
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
+
+" mappings
+nmap <C-n> :NERDTreeToggle<CR>
 
 colorscheme gruvbox
 set background=dark
