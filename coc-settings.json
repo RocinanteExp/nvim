@@ -1,0 +1,20 @@
+{
+  //python config
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+
+  //typescript/javascript config
+  "tsserver.npm": "C:/Program Files/nodejs/npm",
+  "tsserver.log": "verbose",
+  "tsserver.trace.server": "verbose",
+
+  //json config
+  "json.enable": true,
+
+  //coc-prettier configuration
+  "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown"],
+  "prettier.tabWidth": 4,
+  "prettier.printWidth": 120 
+  // prettier.ignorePath (default: .prettierignore)
+  // Supply the path to an ignore file such as .gitignore or .prettierignore. Files which match  will not be formatted. Set to null to not read ignore files. Restart required.
+}
