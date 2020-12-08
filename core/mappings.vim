@@ -27,5 +27,9 @@ nnoremap <c-u> viwU
 " description: <c><delete> delete word
 inoremap <c-bs> <c-w>
 
+" description: insert a new line before or after the cursor
+nnoremap <S-Enter> O<Esc>j
+nnoremap <CR> o<Esc>k
+
 " description: :Prettier format the entire file
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')

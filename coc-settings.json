@@ -1,20 +1,37 @@
 {
-  //python config
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
+    //python config
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
 
-  //typescript/javascript config
-  "tsserver.npm": "C:/Program Files/nodejs/npm",
-  "tsserver.log": "verbose",
-  "tsserver.trace.server": "verbose",
+    //typescript/javascript config
+    "tsserver.npm": "C:/Program Files/nodejs/npm",
+    "tsserver.log": "verbose",
+    "tsserver.trace.server": "verbose",
 
-  //json config
-  "json.enable": true,
+    //json config
+    "json.enable": true,
 
-  //coc-prettier configuration
-  "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown"],
-  "prettier.tabWidth": 4,
-  "prettier.printWidth": 120 
-  // prettier.ignorePath (default: .prettierignore)
-  // Supply the path to an ignore file such as .gitignore or .prettierignore. Files which match  will not be formatted. Set to null to not read ignore files. Restart required.
+    //coc-prettier configuration
+    "coc.preferences.formatOnSaveFiletypes": ["json", "css", "Markdown"],
+    "prettier.tabWidth": 4,
+    "prettier.printWidth": 120,
+    //"prettier.overrides": [
+    //    {
+    //        "files": "*.json",
+    //        "options": {
+    //            "tabWidth": 2
+    //        }
+    //    }
+    //],
+    // prettier.ignorePath (default: .prettierignore)
+    // Supply the path to an ignore file such as .gitignore or .prettierignore. Files which match  will not be formatted. Set to null to not read ignore files. Restart required.
+
+    //coc-java configuration
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-14",
+            "path": "C:\\Program Files\\Java\\jdk14.0.2",
+            "default": true
+        }
+    ]
 }

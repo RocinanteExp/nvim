@@ -295,7 +295,7 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 inoremap <silent>  <S-Insert>  <C-R>+
 
 " set working directory to
-cd $HOME/workspaceVs/PULSBS/server
+cd $HOME/workspaceVs/copy/PULSBS/server
 
 " EXAMPLES
 " :iabbrev @@    steve@stevelosh.com
