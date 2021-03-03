@@ -35,6 +35,7 @@ let g:config_file_list = ['variables.vim',
   \ 'mappings.vim',
   \ ]
 
+" get full path of this file except the last part
 let g:nvim_config_root = expand('<sfile>:p:h')
 for s:fname in g:config_file_list
   execute printf('source %s\core\%s', g:nvim_config_root, s:fname)
@@ -59,13 +60,11 @@ set smartindent
 set smartcase        " if the pattern contains an uppercase letter, it is case sensitive search. Otherwise it is case insensitive 
 set noerrorbells
 
-" generally you would need to set shiftwith == softtabstop
-" but it seems to work as expected even without in nvim 
-
-set tabstop=4        " tab width is 4 spaces
-set shiftwidth=4     " indent also with 4 spaces
-set softtabstop=4    " indent also with 4 spaces
-set expandtab        " expand tabs to spaces
+" settings found already in options.vim
+" set tabstop=4        " tab width is 4 spaces
+" set shiftwidth=4     " indent also with 4 spaces
+" set softtabstop=4    " indent also with 4 spaces
+" set expandtab        " expand tabs to spaces
     
 " turn line numbers on
 set number
@@ -126,8 +125,8 @@ nmap <leader>f  <Plug>(coc-format-selected)
 set guifont=Hack:h12
 
 " hybrid mode
-set number relativenumber
-set nu rnu
+" set number relativenumber
+" set nu rnu
 
 " TextEdit might fail if hidden is not set.
 set hidden

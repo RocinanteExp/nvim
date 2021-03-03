@@ -36,6 +36,8 @@ let &backupdir=g:backupdir
 set backupcopy=yes  " copy the original file to backupdir and overwrite it
 
 " General tab settings
+" generally you would need to set shiftwith == softtabstop
+" but it seems to work as expected even without in nvim 
 set tabstop=4       " number of visual spaces per TAB
 set softtabstop=4   " number of spaces in tab when editing
 set shiftwidth=4    " number of spaces to use for autoindent

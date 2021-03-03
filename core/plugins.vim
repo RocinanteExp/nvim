@@ -11,11 +11,12 @@ call vundle#begin('$HOME/AppData/Local/nvim/bundle/')
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'preservim/nerdtree'
-Plugin 'neoclide/coc.nvim', {'pinned': 1}
-Plugin 'sheerun/vim-polyglot'
+Plugin 'neoclide/coc.nvim'
 Plugin 'gruvbox-community/gruvbox'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Yggdroot/LeaderF'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'vim-airline/vim-airline'
 " Plugin 'neovim/nvim-lspconfig'
 
 call vundle#end()
