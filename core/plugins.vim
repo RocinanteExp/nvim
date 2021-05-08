@@ -17,6 +17,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'Yggdroot/LeaderF'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'vim-airline/vim-airline'
+Plugin 'justinmk/vim-sneak'
 " Plugin 'neovim/nvim-lspconfig'
 
 call vundle#end()

@@ -1,19 +1,18 @@
 "{ Header and Licence
 "{{ header info
-" Description: This is my personal Neovim configuration supporting Mac, Linux
-" and Windows, with various plugins configured. This configuration evolves as
-" I learn more about Nvim and becomes more proficient in using Nvim. Since it
-" is very long (more than 1000 lines!), you should read it carefully and take
+" Description: This is my personal Neovim configuration build on top of the
+" work done by Jie-dong Hao.
+" Since it is very long (more than 1000 lines!), you should read it carefully and take
 " only the settings and options that suits you. I would not recommend cloning
 " this repo and replace your own config. Good configurations are personal,
 " built over time with a lot of polish.
-" Author: Jie-dong Hao
-" Email: jdhao@hotmail.com
+" The original author of the config is Jie-dong Hao (jdhao@hotmail.it)
+" Author: RocinanteExp
 "}}
-
+"
 "{{ License: MIT License
 "
-" Copyright (c) 2018 Jie-dong Hao
+" Copyright (c) 2018 RocinanteExp
 "
 " Permission is hereby granted, free of charge, to any person obtaining a copy
 " of this software and associated documentation files (the "Software"), to
@@ -33,6 +32,7 @@ let g:config_file_list = ['variables.vim',
   \ 'options.vim',
   \ 'plugins.vim',
   \ 'mappings.vim',
+  \ 'autocommands.vim',
   \ ]
 
 " get full path of this file except the last part
@@ -294,11 +294,4 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 inoremap <silent>  <S-Insert>  <C-R>+
 
 " set working directory to
-cd $HOME/workspaceVs/copy/PULSBS/server
-
-" EXAMPLES
-" :iabbrev @@    steve@stevelosh.com
-" :iabbrev ccopy Copyright 2013 Steve Losh, all rights reserved.
-" description: fix comment highlighting for json file
-" source: https://github.com/neoclide/coc.nvim/wiki/Using-the-configuration-file
-autocmd FileType json syntax match Comment +\/\/.\+$+
+cd $HOME/workspace

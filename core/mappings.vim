@@ -33,3 +33,15 @@ nnoremap <CR> o<Esc>k
 
 " description: :Prettier format the entire file
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+
+" description: use tab and shift tab to shift block
+nnoremap <Tab> >>_
+nnoremap <S-Tab> <<_
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+
+" description: use vim-sneak
+map f <Plug>Sneak_s
+map F <Plug>Sneak_S
+map t <Plug>Sneak_t
+map T <Plug>Sneak_T
