@@ -47,6 +47,7 @@ set scrolloff=5     " Minimum lines to keep above and below cursor when scrollin
 
 set history=500     " The number of command and search history to keep
 
+set signcolumn=auto:2
 " Clipboard settings, always use clipboard for all delete, yank, change, put
 " operation, see https://stackoverflow.com/q/30691466/6064933
 if !empty(provider#clipboard#Executable())

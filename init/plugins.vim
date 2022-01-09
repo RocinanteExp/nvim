@@ -13,12 +13,13 @@ call plug#begin()
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'lifepillar/vim-gruvbox8'
-Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 " Plug 'hrsh7th/cmp-cmdline'
+
+Plug 'neovim/nvim-lspconfig'
 
 Plug 'SirVer/ultisnips'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
@@ -67,7 +68,6 @@ let g:Lf_PreviewInPopup = 1
 " show dot files
 let g:Lf_ShowHidden = 1
 
-
 " Search files in popup window
 " nnoremap <silent> <leader>ff :<C-U>Leaderf file --popup<CR>
 
@@ -85,6 +85,7 @@ let g:Lf_ShowHidden = 1
 
 let g:Lf_ShortcutF = "<leader>ff"
 nnoremap <leader>fb :<C-U><C-R>=printf("Leaderf buffer %s", "")<CR><CR>
+nnoremap <leader>fg :<C-U><C-R>=printf("Leaderf rg --no-messages --popup")<CR><CR>
 nnoremap <leader>fm :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
 nnoremap <leader>ft :<C-U><C-R>=printf("Leaderf bufTag %s", "")<CR><CR>
 nnoremap <leader>fl :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
