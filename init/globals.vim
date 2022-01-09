@@ -19,7 +19,8 @@ let g:loaded_ruby_provider = 0
 " Disable node provider
 let g:loaded_node_provider = 0
 
-let g:did_install_default_menus = 1  " do not load menu
+" do not load menu
+let g:did_install_default_menus = 1
 
 " Path to Python 3 interpreter (must be an absolute path), make startup
 " faster. See https://neovim.io/doc/user/provider.html.
@@ -34,10 +35,12 @@ else
 endif
 
 " Custom mapping <leader> (see `:h mapleader` for more info)
-" let g:mapleader = ','
+noremap <silent> <Space> <Nop>
+let g:mapleader=' '
+let g:maplocalleader=' '
 
 " Enable highlighting for lua HERE doc inside vim script
-let g:vimsyn_embed = 'l'
+let g:vimsyn_embed='l'
 
 " Use English as main language
 language en_US.utf-8
@@ -69,4 +72,3 @@ let g:loaded_tutor_mode_plugin = 1  " do not load the tutor plugin
 " let g:loaded_matchparen = 1
 "}}
 "}
-
