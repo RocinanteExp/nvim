@@ -43,7 +43,7 @@ lua require("lua_init")
 """""""""""""""""""""""""better-escape settings"""""""""""""""""""
 
 " use jj to escape insert mode.
-let g:better_escape_shortcut = 'jj'
+let g:better_escape_shortcut = 'jk'
 
 """""""""""""""""""""""""LeaderF settings"""""""""""""""""""
 " Do not use cache file
