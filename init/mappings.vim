@@ -23,10 +23,10 @@ xnoremap > >gv
 " Change text without putting it into the vim register, a sdasdasda
 " see https://stackoverflow.com/q/54255/6064933
 " broken???
-" nnoremap c "_c
-" nnoremap C "_C
-" nnoremap cc "_cc
-" xnoremap c "_c
+nnoremap c "_c
+nnoremap C "_C
+nnoremap cc "_cc
+xnoremap c "_c
 
 " description: 
 " ctrl + j move up a window 

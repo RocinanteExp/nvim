@@ -99,13 +99,12 @@ nnoremap <leader>fr :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
 " let g:UltiSnipsExpandTrigger='<c-j>'
 
 " Do not look for SnipMate snippets
-" let g:UltiSnipsEnableSnipMate = 0
+let g:UltiSnipsEnableSnipMate = 0
 
 " Shortcut to jump forward and backward in tabstop positions
-" let g:UltiSnipsJumpForwardTrigger='<c-j>'
-" let g:UltiSnipsJumpBackwardTrigger='<c-k>'
+let g:UltiSnipsJumpForwardTrigger='<tab>'
+let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 
 " Configuration for custom snippets directory, see
 " https://jdhao.github.io/2019/04/17/neovim_snippet_s1/ for details.
-" let g:UltiSnipsSnippetDirectories=['UltiSnips']
-" a
+let g:UltiSnipsSnippetDirectories=['UltiSnips', 'my_snippets']
