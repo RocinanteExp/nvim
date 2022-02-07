@@ -1,4 +1,4 @@
-" this configurations are most taken from https://github.com/jdhao/nvim-config
+" configuration heavily inspired by the word done by jdhao https://github.com/jdhao/nvim-config
 
 let g:config_files = [
       \ 'globals.vim',
