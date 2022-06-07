@@ -5,8 +5,8 @@ set fileformats=unix,dos    " Fileformats to use for new files
 
 " Time in milliseconds to wait for a mapped sequence to complete,
 " see https://unix.stackexchange.com/q/36882/221410 for more info
-set timeoutlen=250
-set updatetime=250  " For CursorHold events
+set timeoutlen=300
+set updatetime=300  " For CursorHold events
 
 " Disable creating swapfiles, see https://stackoverflow.com/q/821902/6064933
 set noswapfile
@@ -31,6 +31,7 @@ set termguicolors
 set linebreak       " Break line at predefined characters
 set showbreak=↪     " Character to show before the lines that have been soft-wrapped
 set nowrap          " do no wrap
+set lazyredraw      " Do not redraw screen in the middle of a macro. Makes them complete faster.
 
 " Ask for confirmation when handling unsaved or read-only files
 set confirm

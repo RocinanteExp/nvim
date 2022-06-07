@@ -30,6 +30,7 @@ Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 Plug 'nvim-lualine/lualine.nvim'
 " If you want to have icons in your statusline choose one of these
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-tree.lua'
 
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 
@@ -40,10 +41,12 @@ call plug#end()
 
 lua require("lua_init")
 
+
 """""""""""""""""""""""""better-escape settings"""""""""""""""""""
 
 " use jj to escape insert mode.
 let g:better_escape_shortcut = 'jk'
+
 
 """""""""""""""""""""""""LeaderF settings"""""""""""""""""""
 " Do not use cache file
@@ -93,6 +96,8 @@ nnoremap <leader>fr :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
 
 " noremap <C-B> :<C-U><C-R>=printf("Leaderf! rg --current-buffer -e %s ", expand("<cword>"))<CR>
 " noremap <C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
+
+
 """""""""""""""""""""""""UltiSnips settings"""""""""""""""""""
 
 " Trigger configuration. Do not use <tab> if you use YouCompleteMe
@@ -108,3 +113,9 @@ let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 " Configuration for custom snippets directory, see
 " https://jdhao.github.io/2019/04/17/neovim_snippet_s1/ for details.
 let g:UltiSnipsSnippetDirectories=['UltiSnips', 'my_snippets']
+
+
+"""""""""""""""""""""""""UltiSnips settings"""""""""""""""""""
+nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <leader>r :NvimTreeRefresh<CR>
+nnoremap <leader>n :NvimTreeFindFile<CR>
