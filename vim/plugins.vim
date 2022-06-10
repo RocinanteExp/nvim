@@ -20,6 +20,8 @@ Plug 'hrsh7th/cmp-path'
 " Plug 'hrsh7th/cmp-cmdline'
 
 Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/nvim-lsp-installer'
+Plug 'mfussenegger/nvim-jdtls'
 
 Plug 'SirVer/ultisnips'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
@@ -39,7 +41,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'jdhao/better-escape.vim'
 call plug#end()
 
-lua require("lua_init")
+lua require("init")
 
 
 """""""""""""""""""""""""better-escape settings"""""""""""""""""""
