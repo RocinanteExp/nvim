@@ -39,6 +39,9 @@ Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 " We recommend updating the parsers on update
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  
 Plug 'jdhao/better-escape.vim'
+
+Plug 'sbdchd/neoformat'
+
 call plug#end()
 
 lua require("init")
@@ -121,3 +124,7 @@ let g:UltiSnipsSnippetDirectories=['UltiSnips', 'my_snippets']
 nnoremap <C-n> :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
+
+
+"""""""""""""""""""""""""Neoformat settings"""""""""""""""""""
+let g:neoformat_enabled_python = ['black', 'yapf']
